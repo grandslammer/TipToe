@@ -1,13 +1,13 @@
 :root {
   --primary-color: #1d5888;
-  --secondary-color: #ff993b;
+  --secondary-color: #34613a;
   --dark-color: #292929;
   --white-color: #dff3e4;
 }
 
 body {
-  color: var(--dark-color);
-  background-color: #E65100;
+  color: white;
+  background-color: #e65100;
 }
 
 nav {
@@ -17,6 +17,19 @@ nav {
 footer {
   background-color: var(--dark-color);
   padding-right: 1rem;
+}
+
+.Tip {
+  color: blue;
+}
+
+.Toe {
+  color: white;
+}
+
+.TipToe {
+  color: darkgreen;
+  font-weight: bold;
 }
 
 h1,

@@ -57,10 +57,11 @@
       <div class="row row-cols-1 row-cols-lg-2">
         <div class="col col-lg-4 border-end border-2">
           <h4 class="lead">
-            
+
           </h4>
           <h2 class="mt-5 border-bottom border-2">Instructions</h2>
-          <p>Enter two numbers to see what they divide into upto 100. Numbers than can be divided by both your numbers are TipToes!</p>
+          <p>Enter two numbers to see what they divide into upto 100. Numbers than can be divided by both your numbers
+            are TipToes!</p>
         </div>
         <div class="col col-lg-8">
           <div>
@@ -69,11 +70,11 @@
             </h5>
             <form class="row gy-2 gx-3">
               <div class="col">
-                <input id="startValue" type="number" class="form-control" placeholder="Start Value" value="0"
+                <input id="firstNum" type="number" class="form-control" placeholder="Start Value" value="3"
                   aria-label="Start Value">
               </div>
               <div class="col">
-                <input id="endValue" type="number" class="form-control" placeholder="End Value" value="100"
+                <input id="secondNum" type="number" class="form-control" placeholder="End Value" value="5"
                   aria-label="End Value">
               </div>
               <div class="col-12 d-flex justify-content-end">
@@ -131,6 +132,15 @@
       </div>
     </div>
   </footer>
+  <template id="ttTemplate">
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </template>
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
     integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
@@ -140,6 +150,9 @@
     </script>
   <!-- Site JS -->
   <script src="/js/app.js"></script>
+  <script>
+    document.getElementById("btnSubmit").addEventListener("click", getNumbers)
+  </script>
 </body>
 
 </html>
